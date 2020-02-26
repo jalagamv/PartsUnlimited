@@ -35,8 +35,7 @@
   </ItemGroup>
 
   <Target Name="PrecompileScript" BeforeTargets="BeforeBuild">
-    <Exec Command="sudo npm install --python=python2.7" />
-    <Exec Command="sudo npm config set python python2.7" />
+  
     <Exec Command="sudo npm install -g grunt-cli" />
     <Exec Command="grunt" />
   </Target>
